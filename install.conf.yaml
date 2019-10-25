@@ -19,7 +19,7 @@
     stdin: true
     stdout: true
     description: Installing brew bundle
-  - [export EDITOR=vim, export env]
-  - export PAGER=less
-  - export LC_ALL=en_US.UTF-8
-  - [export LANG=en_US.UTF-8, Done]
+  - [EDITOR=vim, export env]
+  - PAGER=less
+  - LC_ALL=en_US.UTF-8
+  - LANG=en_US.UTF-8
