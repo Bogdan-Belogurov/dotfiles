@@ -9,8 +9,16 @@
 
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
-  - [/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)", Installing Homebrew]
-  - [brew bundle, Installing brew bundle]
+  -
+     command: /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+     stdin: true
+     stdout: true
+     description: Installing Homebrew
+  -
+    command: brew bundle
+    stdin: true
+    stdout: true
+    description: Installing brew bundle
   - [export EDITOR=vim, export env]
   - export PAGER=less
   - export LC_ALL=en_US.UTF-8
