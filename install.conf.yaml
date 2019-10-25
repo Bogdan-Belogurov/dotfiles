@@ -1,0 +1,17 @@
+- clean: ['~']
+
+- link:
+    ~/.dotfiles: ''
+    ~/.tmux.conf: tmux.conf
+    ~/.vimrc: vimrc
+    ~/.gitconfig: git/gitconfig
+    ~/.gitignore: git/gitignore
+
+- shell:
+  - [git submodule update --init --recursive, Installing submodules]
+  - [/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)", Installing Homebrew]
+  - [brew bundle, Installing brew bundle]
+  - [export EDITOR=vim, export env]
+  - export PAGER=less
+  - export LC_ALL=en_US.UTF-8
+  - [export LANG=en_US.UTF-8, Done]
