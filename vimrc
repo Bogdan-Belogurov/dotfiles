@@ -26,7 +26,7 @@ set ruler               " show line and column number of the cursor on right sid
 set visualbell          " blink cursor on error, instead of beeping
 set colorcolumn=72
 set textwidth=72
-
+set backspace=indent,eol,start
 """" Key Bindings
 
 " move vertically by visual line (don't skip wrapped lines)
